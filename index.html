@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pau y Agus - Casamiento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="Invitación al casamiento de Paula Goodbar y Agustín Alabarces Varela">
+</head>
+
+<body>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay">
+        <div class="letter-container">
+            <div class="envelope">
+                <div class="wax-seal"></div>
+                <div class="flap"></div>
+            </div>
+            <h1 class="overlay-title">Pau y Agus</h1>
+            <p class="click-hint">Toca para abrir</p>
+        </div>
+        <div class="volume-warning">
+            <p>Se va a reproducir música, ojo con el volumen!</p>
+        </div>
+    </div>
+
+    <!-- Audio Player -->
+    <audio id="music1" preload="auto">
+        <source src="assets/music/track1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="music2" preload="auto">
+        <source src="assets/music/track2.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Controls -->
+    <div class="music-controls">
+        <button id="music-toggle" class="control-btn">🎵</button>
+        <button id="music-next" class="control-btn">⏭</button>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5" class="volume-slider">
+    </div>
+
+    <!-- Main Content -->
+    <main id="invitation" class="invitation hidden">
+        <header class="main-header">
+            <h1>Pau y Agus</h1>
+        </header>
+
+        <!-- Section 1: Introduction & Location -->
+        <section class="section intro-section">
+            <div class="content-wrapper">
+                <div class="text-block">
+                    <p class="intro-text">Te invitan a celebrar su casamiento el <strong>sábado 28 de febrero de
+                            2026</strong>.</p>
+                    <div class="location-block">
+                        <span class="location-icon">📍</span>
+                        <p>Quinta Fábula<br>José Hernández 1199, B1748 Gral. Rodríguez<br>Provincia de Buenos Aires</p>
+                    </div>
+                </div>
+                <div class="map-block">
+                    <div class="map-tabs">
+                        <button class="tab-btn active" data-target="old-map">Mapa vieja escuela</button>
+                        <button class="tab-btn" data-target="google-map">Google Maps</button>
+                    </div>
+                    <div class="map-content">
+                        <div id="old-map" class="map-view active">
+                            <img src="assets/images/mapa.jpg" alt="Mapa vieja escuela" class="full-map-img">
+                        </div>
+                        <div id="google-map" class="map-view">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.260869003054!2d-58.98118219999999!3d-34.597564399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc91d8229cacd9%3A0x58d32904cc6d254e!2sF%C3%A1bula%20Eventos!5e0!3m2!1ses-419!2sar!4v1767293728755!5m2!1ses-419!2sar"
+                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cats Section 1 -->
+            <img src="assets/images/gatito (5).png" class="cat-decoration right-top" alt="Gatito 1">
+            <img src="assets/images/pequeño.png" class="cat-decoration left-bottom" alt="Pequeño">
+        </section>
+
+        <!-- Section 2: Information -->
+        <section class="section info-section">
+            <div class="content-wrapper">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>Cronograma</h3>
+                        <p>El evento será de 13 a 21hs.</p>
+                        <p>La ceremonia será a las 13hs, la fiesta empieza a las 14hs.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Recomendaciones</h3>
+                        <p>Va a hacer mucho calor. No te olvides de ponerte protector solar.</p>
+                        <p>Hay pasto, hay pileta, hay pelotas.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Dresscode</h3>
+                        <p>Vení como quieras, pero vení. Recomendamos malla.</p>
+                        <p>Desaconsejamos tacos y corbata.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Cats Section 2 -->
+            <img src="assets/images/gatito (1).png" class="cat-decoration right-middle" alt="Gatito 2">
+        </section>
+
+        <!-- Section 3: Gifting -->
+        <section class="section gifting-section">
+            <div class="content-wrapper">
+                <div class="gift-card">
+                    <p>Si querés hacernos un regalo podés hacerlo en esta cuenta:</p>
+                    <div class="bank-details">
+                        <p><strong>CBU:</strong> 00700276 30004037044489</p>
+                        <p><strong>Alias:</strong> aalabarces</p>
+                        <p><strong>Banco:</strong> Galicia</p>
+                    </div>
+                    <p class="funny-note">Juro que es para les dos y no me voy a fugar con la guita. Atte: Agus.</p>
+                </div>
+            </div>
+            <!-- Cats Section 3 -->
+            <img src="assets/images/gatito (6).png" class="cat-decoration right-bottom" alt="Gatito 6">
+            <img src="assets/images/gato.png" class="cat-decoration left-middle" alt="Pareja">
+        </section>
+
+        <section class="section photo-album">
+            <div class="content-wrapper">
+                <div class="photo-album">
+                    <p>Armamos un álbum para que compartas todas las fotos que saques</p>
+                    <button class="action-link">
+                        <a href="https://photos.app.goo.gl/qgY4rwXoVkX6CQyX8" target="_blank" class="album-link">
+                            <img src="assets/images/gphotos.svg" alt="Album" class="album-logo">
+                            <img src="assets/images/click.png" alt="click" class="click-icon">
+                        </a>
+                    </button>
+                    <p>Las buenas y malas, lindas y escrachantes, sin curaduría</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Form Link -->
+        <section class="section form-section">
+            <div class="content-wrapper">
+                <div class="form-container-intro" style="text-align: center; padding: 40px;">
+                    <button id="open-form-btn" class="submit-btn">Llenate este<br>formulario precioso</button>
+                    <p>Es individual. Si hay más de un invitade en la casa complétenlo dos veces, tiene 3 preguntas, no
+                        sean vagos.</p>
+                </div>
+            </div>
+            <!-- Cats Section 4 -->
+            <img src="assets/images/gatito (8).png" class="cat-decoration right-float" alt="Gatito 8">
+            <img src="assets/images/gatito (2).png" class="cat-decoration left-top" alt="Gatito 5">
+            <img src="assets/images/pareja.png" class="cat-footer" alt="Gato final">
+        </section>
+    </main>
+
+    <!-- Form Modal -->
+    <div id="form-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="close-form">&times;</span>
+            <form id="rsvp-form">
+                <h4>Completar este formulario implica confirmar asistencia.</h4>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                </div>
+
+                <div class="form-group">
+                    <label>¿Tenés alguna restricción alimenticia?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="diet" value="No" checked> No</label>
+                        <label><input type="radio" name="diet" value="Vegetariano"> Vegetariano</label>
+                        <label><input type="radio" name="diet" value="Vegano"> Vegano</label>
+                        <label><input type="radio" name="diet" value="Intolerante a la lactosa"> Intolerante a la
+                            lactosa</label>
+                        <label><input type="radio" name="diet" value="Celíaco"> Celíaco</label>
+                        <label><input type="radio" name="diet" value="Sin sal"> Sin sal</label>
+                        <label class="other-option">
+                            <input type="radio" name="diet" value="Otro">
+                            Otros <input type="text" id="diet-other" placeholder="Especificar" disabled>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Necesitás transporte para ir al lejano oeste? Vamos a contratar un micro para llevarles y
+                        traerles desde un lugar amistoso de CABA que puedan pagar entre les que lo usen.</label>
+                    <div class="radio-group" id="transport-options">
+                        <label><input type="radio" name="transport" value="Si"> Sí</label>
+                        <label><input type="radio" name="transport" value="No" checked> No</label>
+                        <label><input type="radio" name="transport" value="Auto"> Tengo lugar en el auto para llevar
+                            gente que no quiera ir en el bus de la alegría</label>
+                    </div>
+                </div>
+
+                <!-- Hidden Transport Questions -->
+                <div id="transport-details" class="hidden-group">
+                    <div class="form-group">
+                        <label for="car-spots">¿Cuántos lugares?</label>
+                        <input type="number" id="car-spots" name="car_spots" min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="departure">¿De dónde salís?</label>
+                        <input type="text" id="departure" name="departure">
+                    </div>
+                    <div class="form-group">
+                        <label>¿Con viaje de vuelta?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="return_trip" value="Si"> Sí</label>
+                            <label><input type="radio" name="return_trip" value="No"> No</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="party-duration">¿Vas a quedarte 8 horas fiesteando sin parar?</label>
+                        <input type="text" id="party-duration" name="party_duration">
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" required>
+                        Acepto las <a href="#" id="bases-link">Bases y condiciones</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submit-btn-real">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div id="bases-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Bases y condiciones</h2>
+            <div class="legal-text">
+                <p>Este es un contrato vinculante entre Paula Goodbar y Agustín Alabarces Varela, en adelante la
+                    parejita, y
+                    tus ganas de fiesta, en adelante vos. La parejita se compromete a proveer barra libre, comida,
+                    pelotas
+                    de diversos tamaños y materiales, elementos flotantes, la pileta (para los elementos flotantes), un
+                    guardavidas (para la pileta), música no en vivo y mucho amor. Vos te comprometés a ir, pasarla bomba
+                    y
+                    no hacerles ningún planteo sobre el agobiante calor de febrero, lo poco formal del evento (a tu
+                    criterio) o cualquier otro tipo de queja durante la jornada.</p>
+                <p>La parejita no se compromete a proveer protector solar, off, mallas o cuidadores para tus hijes. El
+                    uso y
+                    abuso de sustancias quedan a criterio, y adquisición, del consumidor, vos. La parejita no pondrá a
+                    disposición ambulancias ni médicos, y nadie trabaja en nuestro casamiento (de les invitades, claro
+                    está)
+                    así que no podés pedirle ayuda a los médicos presentes en caso de requerirla. El número del SAME es
+                    107.
+                    No confundir con 911.</p>
+                <p>¿De verdad leíste todo esto? Bien ahí. Te queremos mucho. Esperamos verte. ❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast hidden">Formulario enviado con éxito!</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
