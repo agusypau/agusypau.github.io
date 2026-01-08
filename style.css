@@ -695,6 +695,21 @@ input[type="number"] {
     width: 250px;
 }
 
+.calendar-section {
+    display: flex;
+    justify-content: center;
+}
+
+.calendar-btn {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
 /* --- Responsive Design --- */
 
 /* Notebooks & Small Laptops (max-width: 1366px) */
